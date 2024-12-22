@@ -8,6 +8,12 @@ function appendOperator(operator) {
     display.value += operator;
 }
 
+function appendDot() {
+    if (!display.value.includes('.')) {
+        display.value += '.';
+    }
+}
+
 function clearDisplay() {
     display.value = '';
 }
